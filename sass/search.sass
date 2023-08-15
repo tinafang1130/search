@@ -1,0 +1,113 @@
+@import utils/_breakingPoint
+@import layout/_articleWrap
+img
+	max-width: 100%
+.search
+	&__inner
+		width: 955px
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -10px
+.pd
+	&__card
+		position: relative
+		width: calc(100% / 3 - 20px)
+		margin: 10px
+		border: #ccc 1px solid
+		border-radius: 4px
+		padding: 20px 20px 70px
+		img
+			width: 100%
+	&__tag
+		height: 20px
+		text-align: center
+		span
+			background: #000000
+			border-radius: 3px
+			color: #fff
+			padding: 4px 5px
+			font-size: 13px
+			text-transform: uppercase
+	&__img
+		width: 60%
+		margin: 10px auto
+	&__name
+		font-size: var(--title-md)
+		text-align: center
+		padding-bottom: 5px
+		&box
+			min-height: 100px
+	&__subname
+		min-height: 40px
+		font-size: 13px
+		text-align: center
+	&__bottom
+		position: absolute
+		left: 0
+		bottom: 0
+		padding: 0 20px 20px
+		width: 100%
+		height: 50%
+		display: flex
+		align-items: flex-end
+		&__inner
+			position: sticky
+			bottom: 0
+			width: 100%
+	&__links
+		padding-bottom: 10px
+		display: flex
+		align-items: center
+		justify-content: center
+		li
+			padding-bottom: 5px
+			margin: 10px
+			position: relative
+			&:hover
+				span
+					display: block
+		a
+			color: #222
+		i
+			font-size: 24px
+			background: var(--color-gray-200)
+			padding: 5px
+			border-radius: 50px
+		span
+			font-size: 13px
+			position: absolute
+			top: 100%
+			left: 50%
+			transform: translateX(-50%)
+			display: none
+			color: var(--color-gray-600)
+	&__btn
+		width: 100%
+		a
+			background: #cccccc
+			border-radius: 4px
+			color: #000
+			display: block
+			text-align: center
+			padding: 10px
+	&__sku
+		display: flex
+		flex-wrap: wrap
+		font-size: 12px
+		padding-bottom: 50px
+		li
+			margin-top: 10px
+			width: calc(50% - 10px)
+			&:nth-child(odd)
+				margin-right: 10px
+			&:nth-child(even)
+				border-left: #ccc 1px solid
+				padding-left: 10px
+		a
+			color: #666
+		.red
+			color: var(--color-red-400)
+	&__spec
+		font-size: 16px
+		color: var(--color-gray-600)
+		padding-bottom: 50px
